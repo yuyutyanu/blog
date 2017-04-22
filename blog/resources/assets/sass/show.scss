@@ -1,0 +1,24 @@
+@import "mixin";
+@import "common";
+@import "variables";
+.article-box{
+  padding:50px;
+  border:solid 5px $border;
+  margin-top:30px;
+  background: #fff;
+}
+.article-box_h3{
+  color:$color;
+  padding:20px;
+}
+.article-box_h2{
+  color:$color;
+  font-size:30px;
+  padding:10px 0px 10px 0px;
+}
+.article{
+  padding:30px;
+  letter-spacing: 3px;
+  line-height: 30px;
+  color:$color;
+}

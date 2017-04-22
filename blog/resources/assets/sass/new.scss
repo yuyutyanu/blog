@@ -1,0 +1,32 @@
+@import "mixin";
+@import "common";
+
+.new-post{
+  margin-top:30px;
+  padding:20px;
+  text-align: center;
+}
+.new-post_h2{
+  margin-bottom:20px;
+  font-size:30px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  color: #a56567;
+}
+.new-post_input{
+  width: 80%;
+  margin-bottom:20px;
+  border-radius: 10px;
+  border:solid 5px #ffc66f;
+  font-size:25px;
+  color:#a56567;
+}
+.new-post_textarea{
+  border:solid 5px #ffc66f;
+  margin-bottom:30px;
+  color:#a56567;
+  font-size:18px;
+}
+.new-post_button{
+@include btn(50px,0px);
+}
