@@ -5,11 +5,12 @@
     <link href="https://fonts.googleapis.com/earlyaccess/sawarabigothic.css" rel="stylesheet"/>
 </head>
 <body class="wf-sawarabigothic">
-<div class="background">
-    <div class="background-center"></div>
-        <div class="container">
-            @yield('content')
-        </div>
+<div class="background-top">
+    <div class="container">
+    <button class="home-button"><a class="home-button_a" href="/"><img class="home" src="/ie.png" alt=""></a></button>
+        @yield('content')
+    </div>
+    <div class="background-bottom"></div>
 </div>
 </body>
 </html>

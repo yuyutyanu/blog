@@ -34,10 +34,9 @@
   left:50%;
   margin-left:-100px;
 }
-.post{
-  padding:20px;
+.post-form{
+  text-align: center;
 }
-.post_btn{
- @include btn(50px,50px,0px);
-  margin-left:80%;
+.post-form_btn{
+ @include btn(50px,50px);
 }

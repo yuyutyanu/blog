@@ -11,7 +11,7 @@
                 <button class="new-post_button">投稿</button>
             </form>
         @else
-            <form action="/posts/{{$article->id}}" method="post">
+            <form class="" action="/posts/{{$article->id}}" method="post">
                 {{ method_field('patch') }}
                 {{ csrf_field() }}
                 <input class="new-post_input" type="text" name="title" value="{{$article->title}}">

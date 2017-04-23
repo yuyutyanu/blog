@@ -1,14 +1,15 @@
 @import "variables";
 
-@mixin btn($height:50px,$width:250px,$width-margin:25px){
+@mixin btn($height:50px,$width:250px){
   border:solid 1px;
-  width: $width - $width-margin;
+  width: $width;
   background: #fff;
   border:solid 5px $border;
   box-sizing: border-box;
   transition: all 0.5s;
   color:$color;
   height:$height;
+  padding:0px;
   &:hover{
     border:solid 5px #a56567;
   }

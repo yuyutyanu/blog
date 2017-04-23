@@ -1,3 +1,4 @@
+@import "mixin";
 //reset.css
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -44,19 +45,32 @@ table {
   border-spacing: 0;
 }
 //common
-.background{
+.background-top{
   background: #fff381;
   min-height:100vh;
   height: auto;
+  width:100%;
+  min-width:1000px;
   position: relative;
 }
-.background-center{
+.background-bottom{
   position: absolute;
   top:50%;
   height:50%;
   width:100%;
+  min-width:1000px;
   background:orange;
 }
+.home-button{
+  position: absolute;
+  right:30px;
+  @include btn(auto,auto)
+}
+.home-button_a{
+  display: block;
+  padding:5px;
+}
+
 
 .container{
   width: 1000px;
@@ -64,6 +78,7 @@ table {
   padding:20px;
   box-sizing: border-box;
   position: relative;
+  z-index: 999;
 }
 
 .wf-sawarabigothic { font-family: "Sawarabi Gothic"; }
