@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Service\BlogDeleteService;
 use App\Service\BlogUpdateService;
 use Illuminate\Http\Request;
 use App\Service\BlogCreateService;
@@ -51,5 +52,11 @@ class BlogController extends Controller
     {
         $updateService->update($id,$this->request);
         return redirect('/posts/'.$id);
+    }
+
+    public function delete(BlogDeleteService $deleteService,$id)
+    {
+        $deleteService->delete($id);
+        return redirect('/');
     }
 }

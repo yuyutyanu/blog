@@ -3,8 +3,8 @@ namespace App\Service;
 
 use App\Blog;
 
-class BlogUpdateService{
 
+class BlogDeleteService{
     private $blog;
 
     function __construct(Blog $blog)
@@ -12,11 +12,8 @@ class BlogUpdateService{
         $this->blog = $blog;
     }
 
-    public function update($id,$request)
-    {
+    public function delete($id){
         $article = $this->blog->find($id);
-        $article->title = $request->title;
-        $article->article = $request->article;
-        $article->save();
+        $article->delete();
     }
 }

@@ -2,19 +2,18 @@
 namespace App\Service;
 
 use App\Blog;
-use Illuminate\Http\Request;
 
-class BlogCreateService{
-    private $request;
+class BlogCreateService
+{
     private $blog;
 
-    function __construct(Request $request,Blog $blog)
+    function __construct(Blog $blog)
     {
-        $this->request = $request;
         $this->blog = $blog;
     }
 
-    public function create($request){
+    public function create($request)
+    {
         $this->blog->create($request->all());
     }
 }
