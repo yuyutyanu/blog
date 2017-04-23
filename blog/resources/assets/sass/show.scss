@@ -16,6 +16,10 @@
   font-size:30px;
   padding:10px 0px 10px 0px;
 }
+.article-box_button{
+  @include btn(50px,50px,0px);
+  margin-left:85%;
+}
 .article{
   padding:30px;
   letter-spacing: 3px;
