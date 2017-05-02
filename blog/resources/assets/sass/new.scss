@@ -26,6 +26,7 @@
   margin-bottom:30px;
   color:#a56567;
   font-size:18px;
+  resize: none;
 }
 .new-post_button{
   @include btn(50px,50px);
