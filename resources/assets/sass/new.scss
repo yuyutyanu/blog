@@ -20,6 +20,7 @@
   border:solid 5px #ffc66f;
   font-size:25px;
   color:#a56567;
+  outline: none;
 }
 .new-post_textarea{
   border:solid 5px #ffc66f;
@@ -27,6 +28,7 @@
   color:#a56567;
   font-size:18px;
   resize: none;
+  outline: none;
 }
 .new-post_button{
   @include btn(50px,50px);
